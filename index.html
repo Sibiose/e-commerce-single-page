@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /* .attribution {
+        font-size: 11px;
+        text-align: center;
+        opacity: 0;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .attribution:hover {
+        opacity: 1;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="checkout-popup">
+      <img
+        src="images/icon-close.svg"
+        alt="Close modal"
+        class="close-checkout-popup"
+      />
+      <h2 class="checkout-popup-message">Thank you for your purchase!</h2>
+    </div>
+    <div class="backdrop"></div>
+    <div class="lightbox-modal">
+      <img
+        src="images/icon-close.svg"
+        alt="Close modal"
+        class="close-img-modal"
+      />
+      <div class="previous">
+        <img src="images/icon-previous.svg" alt="" class="previous-btn" />
+      </div>
+      <div class="next">
+        <img class="next-btn" src="images/icon-next.svg" alt="" />
+      </div>
+
+      <img class="lightbox-img" src="images/image-product-1.jpg" alt="" />
+      <div class="lightbox-thumbnail-wrapper">
+        <img
+          src="images/image-product-1-thumbnail.jpg"
+          alt="Product thumbnail "
+          class="lightbox-thumbnail"
+        /><img
+          src="images/image-product-2-thumbnail.jpg"
+          alt="Product thumbnail"
+          class="lightbox-thumbnail"
+        /><img
+          src="images/image-product-3-thumbnail.jpg"
+          alt="Product thumbnail"
+          class="lightbox-thumbnail"
+        /><img
+          src="images/image-product-4-thumbnail.jpg"
+          alt="Product thumbnail"
+          class="lightbox-thumbnail"
+        />
+      </div>
+    </div>
+    <header>
+      <nav>
+        <button class="menuBtn">
+          <img src="images/icon-menu.svg" alt="" class="menu-img" />
+        </button>
+
+        <img src="images/logo.svg" alt="Sneakers logo" class="logo" />
+        <ul class="modal-nav-ul">
+          <img src="images/icon-close.svg" alt="" class="nav-close-btn" />
+          <li class="nav-li"><a href="" class="nav-link">Collections</a></li>
+          <li class="nav-li"><a href="" class="nav-link">Men</a></li>
+          <li class="nav-li"><a href="" class="nav-link">Women</a></li>
+          <li class="nav-li"><a href="" class="nav-link">About</a></li>
+          <li class="nav-li"><a href="" class="nav-link">Contact</a></li>
+        </ul>
+        <ul class="nav-ul">
+          <li class="nav-li"><a href="" class="nav-link">Collections</a></li>
+          <li class="nav-li"><a href="" class="nav-link">Men</a></li>
+          <li class="nav-li"><a href="" class="nav-link">Women</a></li>
+          <li class="nav-li"><a href="" class="nav-link">About</a></li>
+          <li class="nav-li"><a href="" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="user-widget">
+          <div id="cart" class="cart">
+            <div class="notification"><p class="notification-nr">0</p></div>
+            <img
+              src="images/icon-cart.svg"
+              alt="shopping cart"
+              class="cart-img"
+            />
+          </div>
+          <img src="images/image-avatar.png" alt="" class="user-avatar" />
+          <!-- Modal -->
+          <div id="modal" class="cart-modal">
+            <div class="modal-title-wrapper">
+              <h3 class="modal-title">Cart</h3>
+            </div>
+            <div class="modal-body">
+              <p class="empty-cart">Your cart is empty.</p>
+              <ul class="cart-list">
+                <!-- <li class="product-list-item">
+                  <img
+                    src="images/image-product-1-thumbnail.jpg"
+                    alt=""
+                    class="cart-product-thumbnail"
+                  />
+                  <div class="cart-product-text">
+                    <p class="cart-product-title">
+                      Fall Limited Edition Sneakers
+                    </p>
+                    <div class="cart-product-price">
+                      <span class="current-price">$125.00 x</span>
+                      <span class="number-of-products">3</span>
+                      <span class="total-price">$375.00</span>
+                    </div>
+                  </div>
+                  <button class="cart-delete-btn">
+                    <img src="images/icon-delete.svg" alt="" />
+                  </button>
+                </li> -->
+              </ul>
+              <button class="checkout">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="product-section">
+        <div class="previous mobile-previous">
+          <img
+            src="images/icon-previous.svg"
+            alt=""
+            class="previous-btn mobile-previous-btn"
+          />
+        </div>
+        <div class="next mobile-next">
+          <img
+            src="images/icon-next.svg"
+            alt=""
+            class="next-btn mobile-next-btn"
+          />
+        </div>
+        <img src="images/image-product-1.jpg" alt="" class="product-main" />
+
+        <div class="thumbnail-wrapper">
+          <img
+            src="images/image-product-1-thumbnail.jpg"
+            alt="Product thumbnail "
+            class="product-thumbnail"
+          /><img
+            src="images/image-product-2-thumbnail.jpg"
+            alt="Product thumbnail"
+            class="product-thumbnail"
+          /><img
+            src="images/image-product-3-thumbnail.jpg"
+            alt="Product thumbnail"
+            class="product-thumbnail"
+          /><img
+            src="images/image-product-4-thumbnail.jpg"
+            alt="Product thumbnail"
+            class="product-thumbnail"
+          />
+        </div>
+      </section>
+
+      <section class="details-section">
+        <h3 class="company-title">SNEAKER COMPANY</h3>
+        <h1 class="product-title">
+          Fall Limited Edition <br />
+          Sneakers
+        </h1>
+        <p class="product-details">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price-wrapper">
+          <div class="price-details">
+            <h2 class="product-price">$125.00</h2>
+            <p class="discount">50%</p>
+          </div>
+          <p class="original-price">$250.00</p>
+        </div>
+        <div class="cart-tools">
+          <div class="cart-input">
+            <button class="minus">-</button>
+            <span class="numberOfItems"></span>
+            <button class="plus">+</button>
+          </div>
+          <button class="addToCart-btn">Add to cart</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- <div class="attribution">
+        Design mockup made by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Code by <a href="#">Corneliu M</a>.
+      </div> -->
+    </footer>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
