@@ -389,12 +389,14 @@ footer {
 
 .lightbox-modal {
   position: absolute;
+  max-width: 25rem;
+  max-height: 25rem;
+  width: 35vw;
+  height: 35vh;
+  z-index: 4;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 25rem;
-  height: 25rem;
-  z-index: 4;
   display: none;
 }
 .lightbox-img {
@@ -405,7 +407,7 @@ footer {
 .lightbox-thumbnail-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   margin: 1rem;
 }
 .lightbox-thumbnail {
@@ -630,6 +632,7 @@ footer {
     border-radius: none;
     position: relative;
   }
+
   .user-avatar {
     width: 2rem;
     transition: 0.3s;
