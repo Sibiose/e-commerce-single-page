@@ -545,7 +545,8 @@ footer {
     padding-left: 0.5rem;
     left: 6%;
     width: 16rem;
-    height: 50%;
+    min-height: 30vh;
+    max-height: 70vh;
     box-shadow: 3px 1px 10px 0px hsl(219, 9%, 45%);
     padding-top: 4rem;
     display: none;
